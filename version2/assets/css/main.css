@@ -2230,7 +2230,7 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		background: url("http://yiyunlininteriors.com/version2/images/overlay.png"), url("http://yiyunlininteriors.com/version2/images/fulls/_DSC9985.jpg");
+		background: url("https://raw.githubusercontent.com/JustinGOSSES/yiyunlininteriors.com/master/img/images/fulls/overlay.png"), url("https://raw.githubusercontent.com/JustinGOSSES/yiyunlininteriors.com/master/img/images/fulls/_DSC9985.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -2240,7 +2240,7 @@ input, select, textarea {
 /* One */
 
 	#one {
-		background: url("http://yiyunlininteriors.com/images/overlay.png"), url("http://yiyunlininteriors.com/version2/images/fulls/_DSC0010.jpg");
+		background: url("https://raw.githubusercontent.com/JustinGOSSES/yiyunlininteriors.com/master/img/images/fulls/overlay.png"), url("https://raw.githubusercontent.com/JustinGOSSES/yiyunlininteriors.com/master/img/images/fulls/_DSC0010.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
