@@ -2267,21 +2267,24 @@ input, select, textarea {
 /* One */
 
 	#one {
-		background: url(https://raw.githubusercontent.com/JustinGOSSES/yiyunlininteriors.com/master/img/images/fulls/overlay.png), url(https://raw.githubusercontent.com/JustinGOSSES/yiyunlininteriors.com/master/img/images/fulls/_DSC0010.jpg);
+		background: url(images/fulls/overlay.png), url(/images/IMG_2407_c.jpg);
+/*		background: url(https://raw.githubusercontent.com/JustinGOSSES/yiyunlininteriors.com/master/img/images/fulls/overlay.png), url(https://raw.githubusercontent.com/JustinGOSSES/yiyunlininteriors.com/master/img/images/fulls/_DSC0010.jpg);
+*/		
 		background-size: 256px 256px, cover
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
+		background-repeat: repeat, no-repeat;
 	}
 
 /* Two */
 
-	#two {
+/*	#two {
 		background: url("http://yiyunlininteriors.com/version2/images/overlay.png"), url("http://yiyunlininteriors.com/version2/images/two.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
-
+*/
 /* Contact */
 
 	#contact {
