@@ -20,8 +20,18 @@
         <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+
+		<link rel="stylesheet" href="Ideal_Image_Slider_JS/ideal-image-slider.css">
+		<link rel="stylesheet" href="Ideal_Image_Slider_JS/themes/default/default.css">
+
+		<script src="Ideal_Image_Slider_JS/ideal-image-slider.js"></script>
+
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129046363-1"></script>
+		
+
+
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
@@ -115,61 +125,65 @@
  -->
 		<!-- Work -->
 			<section id="work" class="main style3 primary">
-				<div class="content">
-					<header>
+				<!-- <div class="content"> -->
+					<div style="margin-left:8%;margin-right:8%">
+					<header style="margin-top:3em;">
 						<h2>Portfolio</h2>
-						<p>In addition to long experience in high-end residential, Yi Yun has significant experience in the hospitality industry working with brands such as  Hilton Hotels and Resorts.</p>
+						<!-- <p>In addition to long experience in high-end residential, Yi Yun has significant experience in the hospitality industry working with brands such as  Hilton Hotels and Resorts.</p> -->
 					</header>
-
+					<div>
 					<!-- Gallery  -->
-						<div class="gallery">
-							<article class="from-left">
-								<a href="/images/DSC0001_small1.JPG" class="image fit"><img src="/images/DSC0001_small1.JPG" title="Kitchen from recent interior design project." alt="Image of kitchen from interior design project" /></a>
-							</article>
-							<article class="from-right">
+					<main class="cards">
+					  		<article class="from-right">
 								<a href="/images/DSC9943_small1.JPG" class="image fit"><img src="/images/DSC9943_small1.JPG" title="Dinning room from recent interior design project." alt="Image of dinning room from interior design project." /></a>
+								<p class="caption_proj">POLISHED CONTEMPORARY -EAST AVALON PROJECT</p>
 							</article>					
 							<article class="from-left">
 								<a href="/images/IMG_2367_b_small1.JPG" class="image fit"><img src="/images/IMG_2367_b_small1.JPG" title="Living room." alt="Living room image." /></a>
+								<p class="caption_proj">ALIANA NEW CLASSIC PROJECT</p>
 							</article>
 							<article class="from-right">
 								<a href="/images/IMG_2367_c_small1.JPG" class="image fit"><img src="/images/IMG_2367_c_small1.JPG" title="Living room with view into other rooms." alt="Living room with view into other rooms." /></a>
+								<p class="caption_proj">HOUSTON DOWNTOWN INDUSTRIAL STYLE LOFT</p>
 							</article>
 
 							<article class="from-left">
 								<a href="/images/IMG_2424.JPG" class="image fit"><img src="/images/IMG_2424.JPG" title="Sketched design of potential sitting area." alt="Sketched design of potential sitting area." /></a>
-							</article>
-							<article class="from-right">
-								<a href="/images/IMG_2421c_2.JPG" class="image fit"><img src="/images/IMG_2421c_2.JPG" title="Sketched design for living area with fireplace." alt="Sketched design for living area with fireplace." /></a>
-							</article>
-
-							
-							<article class="from-left">
-								<a href="/images/IMG_2401_small1.JPG" class="image fit"><img src="/images/IMG_2401_small1.JPG" title="Alternative image of bedroom in shades of silver." alt="Alternative image of bedroom in shades of silver." /></a>
-							</article>
-							<article class="from-right">
-								<a href="/images/IMG_2382_small1.JPG" class="image fit"><img src="/images/IMG_2382_small1.JPG" title="Relaxing bedroom." alt="Image of bed in bedroom" /></a>
+								<p class="caption_proj">HEIGHTS 1920'S BUNGALOW MAKEOVER</p>
 							</article>
 							<article class="from-left">
-								<a href="/images/IMG_2368_small1.JPG" class="image fit"><img src="/images/IMG_2368_small1.JPG" title="Dog enjoying his settings." alt="Dog enjoying his settings." /></a>
+								<a href="/images/IMG_2424.JPG" class="image fit"><img src="/images/IMG_2424.JPG" title="Sketched design of potential sitting area." alt="Sketched design of potential sitting area." /></a>
+								<p class="caption_proj">Design Sketches</p>
 							</article>
-							<article class="from-right">
-								<a href="/images/IMG_2367_small1.JPG" class="image fit"><img src="/images/IMG_2367_small1.JPG" title="Lamp on a table in living room setting." alt="lamp on table residential." /></a>
-							</article>
-
-
-						</div>
+					
+					</main>
 
 				</div>
 			</section>
-
+			<section class="main style2 secondary">
+				
+				<div class="" style="display:absolute;position-top:2em;margin:2em;height:50em;">
+					<div id="slider" style="max-height:40em;min-height:40em;max-width:60em;min-width:60em;">
+					    <img src="/images/DSC0001.JPG" title="" alt="This is the caption content">
+					    <img data-src="/images/IMG_2424.JPG" src="" title="" alt="Captions <em>can</em> contain <strong>HTML</strong>">
+					    <img data-src="/images/IMG_2367_small1.JPG" src="" alt="This will be overridden" data-caption="#caption-3">
+					    <img data-src="/images/IMG_2368_small1.JPG" src="" title="" alt="">
+					</div>
+					
+					<div id="caption-3" style="display:none;">
+					    <h3>External Caption</h3>
+					    <p>When using <a href="#">HTML in captions</a> it might be better to use an external caption.</p>
+					</div>
+				</div>
+			</section>
+<p>use this instructions to make something model: https://www.w3schools.com/howto/howto_css_modal_images.asp</p>
 			<section id="contact" class="main style3 secondary">
-				<div class="content">
-					<header>
+				<div class="content" >
+					<div style="margin: 0 auto;">
 						<h2>Contact</h2>
 						<p>Please get in touch. We'd love to help you with your interior design needs.</p>
-						<p style="font-size:medium"><a href="tel:281-356-0251">(281) 356-0251‬</a></p>
-					</header>
+						<p style=""><a href="tel:281-356-0251">(281) 356-0251‬</a></p>
+					</div>
 					<div class="box">
 						<form action="https://formspree.io/yiylininterior@gmail.com" method="POST">
 							<div class="fields">
@@ -213,6 +227,17 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<!-- More Scripts -->
+			<!-- ??? -->
+			<script src="Ideal_Image_Slider_JS/ideal-image-slider.js"></script>
+			<script src="Ideal_Image_Slider_JS/extensions/captions/iis-captions.js"></script>
+			<script src="Ideal_Image_Slider_JS/extensions/bullet-nav/iis-bullet-nav.js"></script>
+			<script>
+				var slider = new IdealImageSlider.Slider('#slider');
+				slider.addCaptions();
+				slider.addBulletNav();
+				slider.start();
+			</script>
 
 	</body>
 </html>
