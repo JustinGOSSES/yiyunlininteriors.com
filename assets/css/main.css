@@ -435,7 +435,7 @@ input, select, textarea {
 			transform-origin: 50% 50%;
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			/*font-family: FontAwesome;*/
+			font-family: FontAwesome;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -932,7 +932,7 @@ input, select, textarea {
 
 		.icon:before {
 			display: inline-block;
-			/*font-family: FontAwesome;*/
+			font-family: FontAwesome;
 			font-size: 1.25em;
 			text-decoration: none;
 			font-style: normal;
@@ -1442,7 +1442,7 @@ input, select, textarea {
 			position: relative;
 			opacity: 1.0;
 			margin-left:25px;
-			margin-top:25px;
+			margin-top:20px;
 		}
 			/*.gallery article {
 				margin-left:1em;
@@ -1901,7 +1901,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#header {
-				height: 4.5em;
+			/*	height: 4.5em;*/
 				line-height: 2.5em;
 			}
 
@@ -1909,9 +1909,9 @@ input, select, textarea {
 					text-align: center;
 					position: relative;
 					left: 0;
-					top: 0;
+					/*top: 0;
 					height: 1.5em;
-					line-height: 2.5em;
+					line-height: 2.5em;*/
 				}
 
 					#header h1 a {
@@ -2345,8 +2345,10 @@ input, select, textarea {
     
   }
    .cards article img {
-	max-width:38em;
-    height:18em;
+	/*min-width:20em;*/
+	/*max-width:38em;*/
+	min-width:350px;
+    height:20em;
     z-index: 10;
   }
   .cards article {
@@ -2356,24 +2358,117 @@ input, select, textarea {
 */    border-color: black;
 /*    box-shadow: 3px 3px 8px 3px rgba(0,0,0,0.3); 
 */    max-width: 38vw;
-    width:38em;
+    /*width:38em;*/
     /*height:18em;*/
 /*    z-index: 200000;
 */    /*max-height: 200vh;
     max-width:20em;*/
+    min-width:350px;
   }
   p.caption_proj {
 	margin-top:0;
 	margin-bottom:-0.1px;
 	height:2em;
   }
-/*   p.caption_proj2 {
-	/*margin-top:0.1em;
-	margin-bottom:0.1em;*/
-	margin-bottom:-0.1px;
-	background-color: black;
-	color:white;
-	height:2em;
-	/*height:3.1em;*/
-  }*/
- 
+
+
+/* The Modal (background) *//* The Modal (background) *//* The Modal (background) *//* The Modal (background) */
+
+/*#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}*/
+
+.myModalImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.myModalImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10000000000; /* Sit on top */
+  padding-top: -50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/*MODAL MODAL MODAL MODAL MODAL MODAL MODAL*/
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 90%;
+  max-width: 900px;
+}
+
+/* Caption of Modal Image */
+.modelCaption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+img.myModelImg {
+	height:100%;
+}
+ }

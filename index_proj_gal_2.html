@@ -129,20 +129,20 @@
 					<div style="margin-left:8%;margin-right:8%">
 					<header style="margin-top:3em;">
 						<h2>Portfolio</h2>
-						<!-- <p>In addition to long experience in high-end residential, Yi Yun has significant experience in the hospitality industry working with brands such as  Hilton Hotels and Resorts.</p> -->
 					</header>
+
 					<div>
 					<!-- Gallery  -->
 					<main class="cards">
 					  		<article class="from-right">
 					  			<!-- id="myImg" -->
-								<img  class="myImg myModelImg" src="/images/DSC9943_small1.JPG" alt="Image of dinning room from interior design project." style="width:100%;">
+								<img  class="myImg myImages myModelImg" src="/images/DSC9943_small1.JPG" alt="Image of dinning room from interior design project." style="width:100%;">
 								<p class="caption_proj">POLISHED CONTEMPORARY</p>
 								<!-- id="myModal" -->
-								<div  class="myModal modal myModelDiv" style="margin: 0 auto">
+								<div id="myModal" class="modal myModelDiv" style="margin: 0 auto">
 								  <span class="close">&times;</span>
 								  <!-- <img class="modal-content" id="img01"> -->
-								  <div class="img01 modelCaption caption"></div>
+								  <div id="img01" class="img01s modelCaption caption"></div>
 								<!-- ///////////////////// -->
 									<div class="myModalDiv" style="display:absolute;position-top:2em;margin:2em;height:50em;">
 										<div id="slider" style="max-height:40em;min-height:40em;max-width:60em;min-width:60em;">
@@ -154,7 +154,37 @@
 										
 										<div id="caption-3" style="display:none;">
 										    <h3>External Caption</h3>
-										    <p>When using 
+										    <p id="caption">When using 
+										    	<a href="#">HTML in captions</a> it might be better to use an external caption.
+										    </p>
+										</div>
+									</div>
+
+								<!-- //////////////////   -->
+								</div>
+
+
+							</article>		
+							<article class="from-right">
+					  			<!-- id="myImg" -->
+								<img  class="myImg myImages myModelImg" src="/images/IMG_2424.JPG" alt="Image of dinning room from interior design project." style="width:100%;">
+								<p class="caption_proj">Design Sketches</p>
+								<!-- id="myModal" -->
+								<div id="myModal" class="modal myModelDiv" style="margin: 0 auto">
+								  <span class="close">&times;</span>
+								  <!-- <img class="modal-content" id="img01"> -->
+								  <div id="img01" class="img01 modelCaption caption"></div>
+								<!-- ///////////////////// -->
+									<div class="myModalDiv" style="display:absolute;position-top:2em;margin:2em;height:50em;">
+										<div id="slider" style="max-height:40em;min-height:40em;max-width:60em;min-width:60em;">
+										    <img src="/images/IMG_2424.JPG" title="" alt="This is the caption content">
+										    <img data-src="/images/IMG_2421c_2.JPG" src="" title="" alt="Captions <em>can</em> contain <strong>HTML</strong>">
+										
+										</div>
+										
+										<div id="caption-3" style="display:none;">
+										    <h3>External Caption</h3>
+										    <p id="caption">When using 
 										    	<a href="#">HTML in captions</a> it might be better to use an external caption.
 										    </p>
 										</div>
@@ -273,37 +303,46 @@
 			<script src="Ideal_Image_Slider_JS/extensions/captions/iis-captions.js"></script>
 			<script src="Ideal_Image_Slider_JS/extensions/bullet-nav/iis-bullet-nav.js"></script>
 			<script>
-				var slider = new IdealImageSlider.Slider('#slider');
-				slider.addCaptions();
-				slider.addBulletNav();
-				slider.start();
+				// var slider = new IdealImageSlider.Slider('#slider');
+				// slider.addCaptions();
+				// slider.addBulletNav();
+				// slider.start();
 			</script>
 			<script>
-				// Get the modal
-				// var modal = document.getElementById("myModal");
-				var modal = document.getElementsByClassName("myModal");
-				// Get the image and insert it inside the modal - use its "alt" text as a caption
-				//var img = document.getElementById("myImg");
-				var img = document.getElementsByClassName("myImg");
-				//var modalImg = document.getElementById("img01");
-				var modalImg = document.getElementsByClassName("img01");
+				// create references to the modal...
+				var modal = document.getElementById('myModal');
+				// to all images -- note I'm using a class!
+				var images = document.getElementsByClassName('myImages');
+				// the image in the modal
+				var modalImgs = document.getElementsByClassName('img01s')
+				// var modalImg = document.getElementById("img01");
+				// and the caption in the modal
 				var captionText = document.getElementById("caption");
-				// var captionText = document.getElementsByClassName("caption");
-				img.onclick = function(){
-				  modal.style.display = "block";
-				  modalImg.src = this.src;
-				  captionText.innerHTML = this.alt;
-				  modelImg.style.height="100%"
-				}
-				console.log("things model things,",modal,img,modalImg,captionText)
 
-				// Get the <span> element that closes the modal
+				// Go through all of the images with our custom class
+				for (var i = 0; i < images.length; i++) {
+				  var img = images[i];
+				  var modalImg = modalImgs[i]
+				  // and attach our click listener for this image.
+				  img.onclick = function(evt) {
+				    modal.style.display = "block";
+				    var modalImg = $(this).next("div.img01s")
+				    modalImg.src = this.src;
+				    captionText.innerHTML = this.alt;
+				    var slider = new IdealImageSlider.Slider('#slider');
+					slider.addCaptions();
+					slider.addBulletNav();
+					slider.start();
+					  }
+				}
+
 				var span = document.getElementsByClassName("close")[0];
 
-				// When the user clicks on <span> (x), close the modal
-				span.onclick = function() { 
+				span.onclick = function() {
+				  modal.style.display = "none";
 				  modal.style.display = "none";
 				}
+								
 			</script>
 
 	</body>
