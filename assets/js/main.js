@@ -87,7 +87,7 @@
 				usePopupDefaultStyling: false,
 				usePopupCaption: true,
 				popupLoaderText: '',
-				windowMargin: 50,
+				windowMargin: 5,
 				usePopupNav: true
 			});
 
