@@ -9,6 +9,16 @@ She delivers personalized services that create timeless, luxury interiors perfec
 
 Yi Yun has a Master Degree in Interior Design from the prestigious Savannah College of Art and Design as well as many year experience at award winning firms.
 
+## Content
+- Landing splash Section
+- About section
+- Portfolio section
+- Services section
+- Contact Us section
+
+## Improvements
+Possible Improvement, Needed Enhancements, and Issues are in the <a href="https://github.com/JustinGOSSES/yiyunlininteriors.com/issues">issues</a> tab.
+
 ## Architecture 
 
 This is a single page application. 
