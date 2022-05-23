@@ -1217,9 +1217,11 @@ p {
 
 	header {
 		margin-bottom: 5em;
+		
 	}
 
-		header p {
+
+	header p {
 			display: block;
 			margin: 1em 0 0 0;
 			padding: 0 0 0.5em 0;
@@ -1227,6 +1229,15 @@ p {
 
 	footer {
 		margin-top: 2em;
+	}
+
+	header#header {
+		height:5.2em !important;
+	}
+	@media screen and (max-width: 830px) {
+		header#header {
+			height:5.9em !important;
+		}
 	}
 
 /* Table */
@@ -1974,7 +1985,7 @@ p {
 		}
 
 	body {
-		padding-top: 5.5em;
+		padding-top: 5.2em;
 	}
 
 		@media screen and (max-width: 736px) {
