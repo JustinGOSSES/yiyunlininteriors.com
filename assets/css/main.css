@@ -667,7 +667,7 @@ p {
 		}
 
 /* Button */
-
+/* 
 	input[type="button"],
 	input[type="submit"],
 	input[type="reset"],
@@ -781,7 +781,7 @@ p {
 			.button.style2.down,
 			button.style2.down {
 				background-image: url("images/arrow.svg");
-			}
+			} */
 
 /* Form */
 
@@ -1841,6 +1841,14 @@ p {
 				transform: translateX(-14em);
 			}
 
+			.gallery.inactive article.from-center {
+				-moz-transform: translateX(0em);
+				-webkit-transform: translateX(0em);
+				-ms-transform: translateX(0em);
+				transform: translateX(0em);
+			}
+
+
 			.gallery.inactive article.from-right {
 				-moz-transform: translateX(14em);
 				-webkit-transform: translateX(14em);
@@ -2449,6 +2457,10 @@ article.from-left {
 	margin-right: 2rem;
   }
 
+article.from-center {
+	margin-right: auto;
+	margin-left: auto;
+}
 article.from-right{
 	margin-left: 2rem;
 }
@@ -2457,6 +2469,11 @@ article.from-right{
 	article.from-left {
 		margin-right: auto;
 	  }
+
+	article.from-center {
+		margin-left: auto;
+		margin-right: auto;
+	}
 	
 	article.from-right{
 		margin-left: auto;
@@ -2593,3 +2610,6 @@ img.myModelImg {
 	margin: 0 auto;
 	}
 }
+
+
+
